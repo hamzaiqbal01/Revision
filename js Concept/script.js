@@ -100,5 +100,11 @@ let options = {
   width: 100,
   height: 200,
 };
-let { title, width, height } = options;
-console.log(title, width, height);
+// let { title, width, height } = options;
+
+// console.log(width, height, title);
+let { title, ...otherData } = options;
+console.log(title, { ...otherData });
+for (let [key, values] of Object.entries(options)) {
+  console.log(`${key}: ${values}`);
+}

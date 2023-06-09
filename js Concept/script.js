@@ -67,5 +67,38 @@ userData.set("name", "hamza");
 userData.set("age", 23);
 
 for (let [key, value] of userData) {
-  console.log(`${key}: ${value}`);
+  console.log(`Map data ${key}: ${value}`);
 }
+
+// swaping the variables
+
+let guest1 = "hamza";
+let guest2 = "taimoor";
+console.log(guest1, guest2);
+
+[guest1, guest2] = [guest2, guest1];
+
+console.log(`after swaping guest1: ${guest1} \n guest2:${guest2} `);
+
+// rest operator
+
+let [name1, name2, ...rest] = [
+  "hamza",
+  "iqbal",
+  "taimoor",
+  "hello coders what are you doing now",
+  "😂😂 ohh babes just doing practice",
+];
+console.log(name1, name2, rest.length);
+// in this console ...rest will work as spread operator
+console.log(name1, name2, ...rest);
+
+// **************************** Destructuring of Objects ******************//
+
+let options = {
+  title: "menu",
+  width: 100,
+  height: 200,
+};
+let { title, width, height } = options;
+console.log(title, width, height);

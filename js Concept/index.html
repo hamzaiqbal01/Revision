@@ -6,10 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .gradParent {
+      border: 50px solid red;
+      cursor: pointer;
+    }
+    .parent {
+      border: 50px solid blue;
+    }
+    .child {
+      border: 50px solid green;
+    }
+  </style>
   <body>
-    <div class="data"></div>
-    <span class="stData">stData</span>
+    <div class="container">
+      <div class="gradParent">
+        <div class="parent">
+          <div class="child">HELO</div>
+        </div>
+      </div>
+    </div>
   </body>
   <!-- <script src="./Destructuring_of_array_and_objects.js"></script> -->
-  <script src="./Destructuring_task.js"></script>
+  <!-- <script src="./Destructuring_task.js"></script> -->
+  <script src="./Event_Listner.js"></script>
 </html>

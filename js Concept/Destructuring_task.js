@@ -34,9 +34,8 @@ let student2 = {
   age: 23,
 };
 
-// const studentRecord = { ...student1, ...student2 };
-const studentRecord = Object.assign({}, student1, student2);
+const studentRecord = { ...student1, ...student2 };
 for (let [key, value] of Object.entries(studentRecord)) {
-  console.log(`${key}: ${value}`);
+  console.log(`${key}:${value}`);
 }
 console.log(studentRecord);
